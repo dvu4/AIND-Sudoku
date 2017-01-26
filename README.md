@@ -14,10 +14,7 @@ A: The naked twins strategy is used when two squares are found within the same u
 
 For example : given {'F3': '23', 'I3':'23', ...}, we can conclude that 2 and 3 must be in F3 and I3 (although we don't know which is where), and we can therefore eliminate 2 and 3 from every other square in the 3 column unit in this case is D3 and E3.
 
-
-Image(filename='nakedtwin.png', width=500, height=500)
-
-![alt tag](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt tag](https://raw.githubusercontent.com/dvu4/AIND-Sudoku/master/nakedtwin.png)
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
