@@ -47,12 +47,13 @@ def naked_twins(values):
                             values[item] = values[item].replace(digit1,'')
                             #print('digit1 is:',type(digit1))
                             #print(box , peer, item , values[item], ':',digit1, digit2)
-
+                            assign_value(values, item, values[item])
                             
                         if digit2 in values[item]:
                             values[item] = values[item].replace(digit2,'')
                             #print('digit2 is:',type(digit2))
                             #print(box , peer, item , values[item], ':',digit1, digit2)
+                            assign_value(values, item, values[item])
                             
     
     return values
@@ -167,6 +168,7 @@ def eliminate(values):
         digit = values[box]
         for peer in peers[box]:
             values[peer] = values[peer].replace(digit,'')
+            assign_value(values, peer, values[peer])
             
            
     return values
@@ -185,6 +187,7 @@ def only_choice(values):
             
             if len(digit_places) == 1:
                 values[digit_places[0]] = digit
+                assign_value(values, digit_places[0], digit)
                 
 
     return values
