@@ -262,7 +262,7 @@ def solve(grid):
 if __name__ == '__main__':
     diag_sudoku_grid = '2.............62....1....7...6..8...3...9...7...6..4...4....8....52.............3'
     display(solve(diag_sudoku_grid))
-    assign_value(solve(diag_sudoku_grid))
+    #assign_value(solve(diag_sudoku_grid))
     
     
     try:
